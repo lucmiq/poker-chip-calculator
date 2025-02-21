@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker Chip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Poker Chip Value Calculator</h1>
+
+        <!-- Table Value Input -->
+        <label for="tableValue">Table Value (R$):</label>
+        <input type="number" id="tableValue" placeholder="Enter Table Value" aria-label="Table Value" step="0.01"><br>
+
+        <!-- Chip Inputs -->
+        <label>Ficha 100:</label>
+        <input type="number" id="ficha100" placeholder="Quantity" aria-label="Ficha 100"><br>
+
+        <label>Ficha 50:</label>
+        <input type="number" id="ficha050" placeholder="Quantity" aria-label="Ficha 50" ><br>
+
+        <label>Ficha 25:</label>
+        <input type="number" id="ficha025" placeholder="Quantity" aria-label="Ficha 25" ><br>
+
+        <label>Ficha 5:</label>
+        <input type="number" id="ficha005" placeholder="Quantity" aria-label="Ficha 5" ><br>
+
+        <label>Ficha 1:</label>
+        <input type="number" id="ficha001" placeholder="Quantity" aria-label="Ficha 1" ><br>
+
+        <!-- Calculate Button -->
+        <button id="calculateButton">Calculate Chip Values</button>
+        
+        <!-- Reset Button -->
+        <button id="resetButton">Reset</button>
+
+        <!-- Results Display -->
+        <h2>Chip Values:</h2>
+        <p>Ficha 100: R$ <span id="value100">0.00</span></p>
+        <p>Ficha 050: R$ <span id="value050">0.00</span></p>
+        <p>Ficha 025: R$ <span id="value025">0.00</span></p>
+        <p>Ficha 005: R$ <span id="value005">0.00</span></p>
+        <p>Ficha 001: R$ <span id="value001">0.00</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
